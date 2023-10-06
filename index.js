@@ -14,5 +14,10 @@ const showAnswerButton = document.querySelector(
 const answer = document.querySelector('[data-js="answer"]');
 
 showAnswerButton.addEventListener("click", () => {
-  answer.classList.toggle("card__answer");
+  answer.classList.toggle("card__answer--active");
+  if (answer.classList.contains("card__answer--active")) {
+    showAnswerButton.textContent = "Hide Answer";
+  } else {
+    showAnswerButton.textContent = "Show answer";
+  }
 });
