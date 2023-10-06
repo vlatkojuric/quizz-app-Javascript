@@ -22,10 +22,14 @@
               In the Kingdom Heart series who provides the english voice for
               Master Eraqus?
             </h2>
-            <button class="card__button-answer" type="button">
+            <button
+              class="card__button-answer"
+              type="button"
+              data-js="show-answer-button"
+            >
               Show answer
             </button>
-            <p class="card__answer">Mark Hamill</p>
+            <p class="card__answer" data-js="answer">Mark Hamill</p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#kingdomheart</li>
               <li class="card__tag-list-item">#mastereraqus</li>
@@ -37,6 +41,7 @@
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewbox="0 0 24 24"
+                  data-js="bookmark-change-color"
                 >
                   <path
                     d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
@@ -177,5 +182,6 @@
         </li>
       </ul>
     </nav>
+    <script src="index.js"></script>
   </body>
 </html>
