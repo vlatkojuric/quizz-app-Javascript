@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./components/form-html-header-css/form-header.css"
+    />
   </head>
   <body>
     <!-- this is the header  -->
-    <header class="header">
-      <h1 class="header__title">Quiz-App</h1>
+    <header>
+      <h1 class="header-form">Quiz-App</h1>
     </header>
-    <main></main>
+    <section class="form-section">
+      <form>
+        <p>Your question:</p>
+        <label for="question"></label>
+        <textarea name="question" id="question" cols="30" rows="10"></textarea>
 
+        <p>Your answer:</p>
+        <label for="answer"></label>
+        <textarea name="answer" id="answer" cols="30" rows="10"></textarea>
+        <p>Tag:</p>
+        <label for="tag"></label>
+        <input type="text" id="tag" name="tag" />
+      </form>
+      <button type="submit" class="submit-button">Submit</button>
+    </section>
     <!-- this is the navigation bar in the footer -->
     <nav class="navigation">
       <ul class="navigation__list" data-js="navigation-list">
