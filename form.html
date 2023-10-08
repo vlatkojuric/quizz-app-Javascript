@@ -17,7 +17,7 @@
       <h1 class="header-form">Quiz-App</h1>
     </header>
     <section class="form-section">
-      <form>
+      <form data-js="form-data">
         <p>Your question:</p>
         <label for="question"></label>
         <textarea name="question" id="question" cols="30" rows="10"></textarea>
@@ -28,8 +28,14 @@
         <p>Tag:</p>
         <label for="tag"></label>
         <input type="text" id="tag" name="tag" />
+        <br /><button
+          type="submit"
+          class="submit-button"
+          data-js="submit-button"
+        >
+          Submit
+        </button>
       </form>
-      <button type="submit" class="submit-button">Submit</button>
     </section>
     <!-- this is the navigation bar in the footer -->
     <nav class="navigation">
@@ -88,9 +94,11 @@
             </svg>
           </a>
         </li>
-        <li class="navigation__list-item"><a href="form.html">Form</a></li>
+        <li class="navigation__list-item">
+          <a href="form.html">Form</a>
+        </li>
       </ul>
     </nav>
-    <script src="index.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>

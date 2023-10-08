@@ -15,7 +15,7 @@ const showAnswerButton = document.querySelector(
 //we put the answer into a variable also so we can use it in a function down below
 const answer = document.querySelector('[data-js="answer"]');
 //we added a event listener on a button in html file which we saved into a variable so when we click it does something
-//then we use the answe variable in which the hidden answer is stored
+//then we use the answer variable in which the hidden answer is stored
 //we use the conditionals,and if the saved variable "contains" the answer,the answer will show and the button will change it´s "textContent" to Hide answer,so the answer hides again
 
 showAnswerButton.addEventListener("click", () => {
